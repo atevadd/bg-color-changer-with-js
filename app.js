@@ -9,13 +9,14 @@ colorPicker.addEventListener('change', changeColor);
 // change button event listener
 colorBtn.addEventListener('click', changeToInputColor);
 
-//function to change bg-color via color picker
+//function to change bg-color via color picker.
 function changeColor(){
-    const colorVariable = '--color';
+    const colorVariable = '--color'; //color variable from the CSS
     
     document.documentElement.style.setProperty(colorVariable, colorPicker.value);
 }
 
+// function to change bg-color via the text input.
 function changeToInputColor(){
     const colorVariable = "--color";
     const colorInput = document.querySelector('#colorinput').value;
